@@ -33,6 +33,33 @@ textarea {
   font-family: monospace;
 }
 
+.loading {
+  background-color: lightgray;
+  height: 90%;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #333;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 input {
   border-radius: 7px;
   height: 40px;
@@ -40,6 +67,28 @@ input {
   font-size: 20px;
   padding-left: 5px;
   font-family: monospace;
+}
+
+.checkbox {
+  border-radius: 7px;
+  height: 30px;
+  width: 30px;
+  font-size: auto;
+  padding-left: auto;
+  font-family: monospace;
+  margin-left: 10px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 select {
@@ -65,15 +114,74 @@ button {
   padding-right: 10px;
   font-family: monospace;
   margin-top: 20px;
+  margin-right: 10px;
   cursor: pointer;
-  /* width: 100px; */
 }
 
 button:hover {
   background-color: #168f56;
 }
 
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+
+}
+
+.btn-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* 
     Green: #1dbf73
     Black: #62646a
 */
+
+.settings-btn {
+  background-color: lightgray;
+}
+
+.settings-btn:hover {
+  background-color: gray;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  padding: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
