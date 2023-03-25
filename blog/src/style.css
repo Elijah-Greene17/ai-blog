@@ -185,3 +185,8 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+.csv-btn{
+  position: absolute;
+  right: 10%;
+}
