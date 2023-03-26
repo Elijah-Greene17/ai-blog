@@ -1,4 +1,4 @@
-const api_key = 'Enter your API key here';
+const api_key = 'Enter your API kety here';
 
 export async function generate(prompt, obj) {
     let res = 'None';

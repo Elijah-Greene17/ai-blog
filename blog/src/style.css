@@ -5,7 +5,8 @@
   justify-content: space-evenly;
   width: 90vw;
   /*remove this to let height be relative to amount of content*/
-  height: 90vh;
+  /* height: 90vh; */
+  padding-bottom: 20px;
   margin: auto;
   margin-top: 20px;
   border-radius: 7px;
@@ -35,7 +36,7 @@ textarea {
 
 .loading {
   background-color: lightgray;
-  height: 90%;
+  height: 600px;
   padding: 5px;
   border-radius: 7px;
   border: 1px solid black;
@@ -101,7 +102,7 @@ select {
 }
 
 .content {
-  height: 90%;
+  height: 600px;
   padding: 5px;
 }
 

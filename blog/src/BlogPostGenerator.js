@@ -282,7 +282,7 @@ function BlogPostGenerator() {
                 <button
                     onClick={() => {
                         const text = content;
-                        const filename = 'gpt-result.txt';
+                        const filename = `${topic}.txt`;
                         const blob = new Blob([text], {
                             type: 'text/plain;charset=utf-8',
                         });
